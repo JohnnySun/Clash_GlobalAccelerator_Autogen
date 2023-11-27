@@ -1,2 +1,1 @@
-Add Actions secrets
-PERSONAL_PROXIES_GIT_SSH : git@github.com:xxxx/xxxx.git
+(Optional) 如需设置私有的个人代理配置，可以参考 `/proxies` 文件夹下的格式，新建一个私有工程，创建私有工程后前往 `Settings->Security->Secrets and variables->Action->Repository secrets` 中新增 `PERSONAL_PROXIES_GIT` 并设置值为 `USERNAME/YOURPROJECT.git`

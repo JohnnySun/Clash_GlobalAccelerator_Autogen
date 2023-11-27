@@ -27,7 +27,7 @@ jobs:
       - name: Clone Personal Proxies Override
         run: |
           rm -rf proxies
-          git clone https://x-access-token:${{ secrets.REPO_ACCRSS_TOKEN }}@github.com/${{ secrets.PERSONAL_PROXIES_GIT }} proxies
+          [ -n "${{ secrets.REPO_ACCRSS_TOKEN }}" ] && git clone https://x-access-token:${{ secrets.REPO_ACCRSS_TOKEN }}@github.com/${{ secrets.PERSONAL_PROXIES_GIT }} proxies
       - name: Generate ClashXPro configuration
         run: sh ./sh/gen_clash_config.sh ${{ secrets.DLER_SUBSCRIBE_TOKEN }}
       # Update clash_config.yaml to gist 
