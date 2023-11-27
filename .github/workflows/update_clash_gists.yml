@@ -33,7 +33,7 @@ jobs:
           PERSONAL_PROXIES_GIT_SSH: ${{ secrets.PERSONAL_PROXIES_GIT_SSH }}
         run: |
           rm -rf proxies
-          git clone ${PERSONAL_PROXIES_GIT_SSH} proxies
+          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${PERSONAL_PROXIES_GIT_SSH}
       - name: Generate ClashXPro configuration
         env:
           DLER_SUBSCRIBE_TOKEN: ${{ secrets.DLER_SUBSCRIBE_TOKEN }}
