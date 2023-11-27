@@ -1,5 +1,14 @@
 # clash-config-autogen
-clash配置自动生成脚本
+按IP地址自动选择最优路由配置，万能Clash配置，无需各种规则分流，自动选择最优路由。
+
+由于该路由规则依赖精准的GeoIP数据库，建议搭配 [Ipinfo.io MMDB Database](https://github.com/JohnnySun/geoip) 使用
+
+Android用户，可以使用 [Ipinfo.io MMDB Database Android](https://github.com/JohnnySun/ClashForAndroid-Geoip/releases)。安装后，在Clash/ClashMate Android 的 `旁加载GeoIP` 中配置 Source
+
+# 特点
+1. 无需复杂的规则分流，该配置基于IPLocation自动实现最优路由选择
+2. 支持路由降级，当最优节点出现单点故障时，支持路由降级策略，优先保证可用性
+3. 支持Anycast最优路由，判断AnycastIP，实现就近路由
 
 # 配置方法
 1. Fork该工程
