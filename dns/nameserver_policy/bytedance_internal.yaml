@@ -1,4 +1,4 @@
-# ByteDance Internal DNS configuration
+# ByteDance DNS configuration
 "+.byted.org": "10.1.0.2"
 "+.bytedance.net": "10.1.0.2"
 "+.byte008.com": "10.1.0.2"
