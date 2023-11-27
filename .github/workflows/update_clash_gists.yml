@@ -24,33 +24,18 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
-      # Install jq
-      - name: Install jq
-        run: sudo apt-get install -y jq
       - name: Clone Personal Proxies Override
-        env:
-          PERSONAL_PROXIES_GIT_SSH: ${{ secrets.PERSONAL_PROXIES_GIT_SSH }}
         run: |
           rm -rf proxies
-          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${PERSONAL_PROXIES_GIT_SSH}
+          git clone https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com//${{ secrets.PERSONAL_PROXIES_GIT }}
       - name: Generate ClashXPro configuration
-        env:
-          DLER_SUBSCRIBE_TOKEN: ${{ secrets.DLER_SUBSCRIBE_TOKEN }}
-        run: sh ./sh/gen_clash_config.sh ${DLER_SUBSCRIBE_TOKEN}
+        run: sh ./sh/gen_clash_config.sh ${{ secrets.DLER_SUBSCRIBE_TOKEN }}
       # Update clash_config.yaml to gist 
-      - name: Update clash_config.yaml to gist
-        env:
-          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
-          GIST_ID: ${{ secrets.GIST_ID }}
-        run:  |
-          flodername="./clash/gen/config"
-          filename="clash_config.yaml"
-          body="`jq --raw-input --slurp . $flodername/$filename`"
-          wget --header "Accept:application/json" \
-          --header "Authorization:Bearer `${GIST_TOKEN}`" \
-          --header "X-GitHub-Api-Version:2022-11-28" \
-          --output-document - \
-          --method PATCH \
-          --body-data "{\"files\":{\"$filename\":{\"content\":$body}}}" \
-          https://api.github.com/gists/`${GIST_ID}`
+      - name: Deploy
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.GIST_TOKEN }}
+          gist_id: ${{ secrets.GIST_ID }}
+          gist_file_name: clash_config.yaml
+          file_path: ./gen/config/clash_config.yaml
+          file_type: text
