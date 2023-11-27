@@ -1,0 +1,15 @@
+- name: "US"
+  type: fallback
+  proxies:
+    - US-PRIORITY-ROUTING
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300
+
+- name: "CA"
+  type: fallback
+  proxies:
+    - CA-PRIORITY-ROUTING
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300

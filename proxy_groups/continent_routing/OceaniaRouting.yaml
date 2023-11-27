@@ -1,0 +1,7 @@
+- name: "AU"
+  type: fallback
+  proxies:
+    - AU-PRIORITY-ROUTING
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300

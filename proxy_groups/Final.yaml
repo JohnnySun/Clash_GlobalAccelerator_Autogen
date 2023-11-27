@@ -1,0 +1,17 @@
+- name: "FINAL-USER-PRIORITY-ROUTING"
+  type: select
+  proxies:
+      - HK
+      - TW
+      - JP
+      - SG
+      - US
+      - DIRECT
+      
+- name: "FINAL"
+  type: fallback
+  proxies:
+    - FINAL-USER-PRIORITY-ROUTING
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300

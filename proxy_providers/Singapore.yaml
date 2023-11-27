@@ -1,0 +1,21 @@
+SG-IEPL-STD:
+  type: http
+  url: https://dler.cloud/subscribe/DLER_SUBSCRIBE_TOKEN?protocols=smart&provider=clash&realy=true&udp=true&tfo=true&area=sg&match=IEPL.*Std
+  interval: 345600
+  path: ./profiles/proxies/sg-iepl-std.provider
+  health-check:
+    enable: true
+    interval: 600
+    # lazy: true
+    url: http://www.gstatic.com/generate_204
+
+SG-IEPL-AIR:
+  type: http
+  url: https://dler.cloud/subscribe/DLER_SUBSCRIBE_TOKEN?protocols=smart&provider=clash&realy=true&udp=true&tfo=true&area=sg&match=IEPL.*Air
+  interval: 345600
+  path: ./profiles/proxies/sg-iepl-air.provider
+  health-check:
+    enable: true
+    interval: 600
+    # lazy: true
+    url: http://www.gstatic.com/generate_204

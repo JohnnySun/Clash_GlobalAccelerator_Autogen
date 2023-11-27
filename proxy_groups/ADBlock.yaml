@@ -1,0 +1,5 @@
+- name: "ADBlock"
+  type: select
+  proxies:
+      - REJECT
+      - DIRECT

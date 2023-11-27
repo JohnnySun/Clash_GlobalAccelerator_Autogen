@@ -1,0 +1,19 @@
+# South American default router
+# P0 South American IEPL Lite
+- BR-IEPL-AIR
+- AR-IEPL-AIR
+# P2 North American IEPL Lite
+- US-IEPL-AIR
+# P3 Europe IEPL Lite
+- GB-IEPL-AIR
+- FR-IEPL-AIR
+- DE-IEPL-AIR
+# P4 Asia IEPL Stander
+- SG-IEPL-STD
+- HK-IEPL-STD
+- TW-IEPL-STD
+# P5 Asia IEPL Lite
+- SG-IEPL-AIR
+- HK-IEPL-AIR
+- TW-IEPL-AIR
+- JP-IEPL-AIR

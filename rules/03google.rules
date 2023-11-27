@@ -1,0 +1,11 @@
+# Google Anycast
+DOMAIN-KEYWORD,google,HK
+DOMAIN,google.cn,HK
+DOMAIN-SUFFIX,google.cn,HK
+DOMAIN,google.com,HK
+DOMAIN-SUFFIX,google.com,HK
+DOMAIN,google.com.hk,HK
+DOMAIN-SUFFIX,google.com.hk,HK
+DOMAIN,google.co.jp,HK
+DOMAIN-SUFFIX,google.co.jp,HK
+# End of Google

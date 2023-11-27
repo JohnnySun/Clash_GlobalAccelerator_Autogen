@@ -1,0 +1,7 @@
+- name: "TR"
+  type: fallback
+  proxies:
+    - TR-PRIORITY-ROUTING
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300

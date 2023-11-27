@@ -1,0 +1,4 @@
+RULE-SET, Anycast, HK
+RULE-SET, Telegram, HK
+RULE-SET, Reject-DOMAIN, ADBlock
+RULE-SET, Reject-IPCIDR, ADBlock

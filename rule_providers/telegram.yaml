@@ -1,0 +1,6 @@
+Telegram:
+  type: http
+  behavior: classical
+  url: https://cdn.libz.so/raw/dler-io/Rules/main/Clash/Provider/Telegram.yaml
+  path: ./Rules/Telegram.yaml
+  interval: 86400

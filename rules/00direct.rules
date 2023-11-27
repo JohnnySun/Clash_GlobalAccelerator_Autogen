@@ -1,0 +1,8 @@
+DOMAIN,ipinfo.io,DIRECT
+DOMAIN-SUFFIX,ipinfo.io,DIRECT
+
+# boxjs
+DOMAIN,boxjs.com,DIRECT
+DOMAIN-SUFFIX,boxjs.com,DIRECT
+DOMAIN,boxjs.net,DIRECT
+DOMAIN-SUFFIX,boxjs.net,DIRECT

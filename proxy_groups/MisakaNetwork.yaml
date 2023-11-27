@@ -1,0 +1,23 @@
+- name: "MISAKA-TIANJIN"
+  type: fallback
+  proxies:
+    - Misaka_Tianjin_Edge
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300
+
+- name: "MISAKA-BEIJING"
+  type: fallback
+  proxies:
+    - Misaka_Beijing_Edge
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300
+
+- name: "MISAKA-ULANQAB"
+  type: fallback
+  proxies:
+    - Misaka_Ulanqab_Edge
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300

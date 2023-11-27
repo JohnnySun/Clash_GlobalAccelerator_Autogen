@@ -1,0 +1,13 @@
+# Europe default router
+# P0 Europe IEPL Lite
+- DE-IEPL-AIR
+- FR-IEPL-AIR
+- GB-IEPL-AIR
+# P1 North American IEPL
+- US-IEPL-AIR
+- CA-IEPL-AIR
+# P2 Asia IEPL Stander
+- SG-IEPL-STD
+- HK-IEPL-STD
+- SG-IEPL-AIR
+- HK-IEPL-AIR

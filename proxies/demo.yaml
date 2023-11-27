@@ -1,0 +1,15 @@
+- name: name
+  type: ss
+  server: server.com
+  port: 8388
+  password: password
+  udp: true
+  cipher: aes-128-gcm
+
+- name: name1
+  type: ss
+  server: server.com
+  port: 8388
+  password: password
+  udp: true
+  cipher: aes-128-gcm

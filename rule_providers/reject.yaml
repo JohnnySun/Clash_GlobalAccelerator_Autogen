@@ -1,0 +1,13 @@
+Reject-DOMAIN:
+  type: http
+  behavior: domain
+  url: https://cdn.libz.so/raw/JohnnySun/Router-Rule/master/ClashX/rule_providers/ad_block/ad_block_domain.yaml
+  path: ./Rules/Reject.yaml
+  interval: 86400
+
+Reject-IPCIDR:
+  type: http
+  behavior: ipcidr
+  url: https://cdn.libz.so/raw/JohnnySun/Router-Rule/master/ClashX/rule_providers/ad_block/ad_block_ipcidr.yaml
+  path: ./Rules/Reject.yaml
+  interval: 86400

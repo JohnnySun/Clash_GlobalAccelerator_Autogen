@@ -1,0 +1,63 @@
+- name: "JP"
+  type: fallback
+  proxies:
+    - JP-PRIORITY-ROUTING
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300
+
+- name: "HK"
+  type: fallback
+  proxies:
+    - HK-PRIORITY-ROUTING
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300  
+
+- name: "SG"
+  type: fallback
+  proxies:
+    - SG-PRIORITY-ROUTING
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300  
+
+- name: "TW"
+  type: fallback
+  proxies:
+    - TW-PRIORITY-ROUTING
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300  
+
+- name: "KR"
+  type: fallback
+  proxies:
+    - KR-PRIORITY-ROUTING
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300  
+
+- name: "TH"
+  type: fallback
+  proxies:
+    - TH-PRIORITY-ROUTING
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300  
+
+- name: "IN"
+  type: fallback
+  proxies:
+    - IN-PRIORITY-ROUTING
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300  
+
+- name: "PH"
+  type: fallback
+  proxies:
+    - PH-PRIORITY-ROUTING
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300  

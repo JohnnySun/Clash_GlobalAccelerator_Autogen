@@ -1,0 +1,56 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Update Clash Gists
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "master" branch
+  push:
+    branches: [ "dler" ]
+  pull_request:
+    branches: [ "dler" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Install jq
+      - name: Install jq
+        run: sudo apt-get install -y jq
+      - name: Clone Personal Proxies Override
+        env:
+          PERSONAL_PROXIES_GIT_SSH: ${{ secrets.PERSONAL_PROXIES_GIT_SSH }}
+        run: |
+          rm -rf proxies
+          git clone ${PERSONAL_PROXIES_GIT_SSH} proxies
+      - name: Generate ClashXPro configuration
+        env:
+          DLER_SUBSCRIBE_TOKEN: ${{ secrets.DLER_SUBSCRIBE_TOKEN }}
+        run: sh ./sh/gen_clash_config.sh ${DLER_SUBSCRIBE_TOKEN}
+      # Update clash_config.yaml to gist 
+      - name: Update clash_config.yaml to gist
+        env:
+          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+          GIST_ID: ${{ secrets.GIST_ID }}
+        run:  |
+          flodername="./clash/gen/config"
+          filename="clash_config.yaml"
+          body="`jq --raw-input --slurp . $flodername/$filename`"
+          wget --header "Accept:application/json" \
+          --header "Authorization:Bearer `${GIST_TOKEN}`" \
+          --header "X-GitHub-Api-Version:2022-11-28" \
+          --output-document - \
+          --method PATCH \
+          --body-data "{\"files\":{\"$filename\":{\"content\":$body}}}" \
+          https://api.github.com/gists/`${GIST_ID}`

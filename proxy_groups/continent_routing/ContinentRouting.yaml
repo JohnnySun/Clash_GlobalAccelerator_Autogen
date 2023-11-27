@@ -1,0 +1,62 @@
+# Asia default router
+- name: "AF"
+  type: fallback
+  proxies:
+    - AF-PRIORITY-ROUTING
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300
+
+# Antarctica default router
+- name: "AN"
+  type: fallback
+  proxies:
+    - AF-PRIORITY-ROUTING
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300
+
+# Asia default router
+- name: "AS"
+  type: fallback
+  proxies:
+    - AS-PRIORITY-ROUTING
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300
+
+# Europe default router
+- name: "EU"
+  type: fallback
+  proxies:
+    - EU-PRIORITY-ROUTING
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300
+
+# North American default router
+- name: "NA"
+  type: fallback
+  proxies:
+    - NA-PRIORITY-ROUTING
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300
+  
+# Oceania default router
+- name: "OC"
+  type: fallback
+  proxies:
+    - OC-PRIORITY-ROUTING
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300
+
+# South American default router
+- name: "SA"
+  type: fallback
+  proxies:
+    - SA-PRIORITY-ROUTING
+    - DIRECT
+  url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
+  interval: 300

@@ -1,0 +1,10 @@
+# Continent Antarctica
+
+# Customize Router
+
+# Default router
+GEOIP, AQ, AN
+GEOIP, BV, AN
+GEOIP, GS, AN
+GEOIP, HM, AN
+GEOIP, TF, AN
