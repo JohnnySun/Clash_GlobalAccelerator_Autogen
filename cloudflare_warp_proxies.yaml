@@ -53,3 +53,16 @@
   dns: [1.1.1.1, 1.0.0.1]
   # mtu: 1420
   udp: true  
+
+- name: "Warp-Domain"
+  type: wireguard
+  server: engage.cloudflareclient.com
+  port: 2408
+  ip: 172.16.0.2
+  private-key: CF_WARP_PRIVATE_KEY
+  public-key: CF_WARP_PUBLIC_KEY
+  # preshared-key: base64
+  remote-dns-resolve: false
+  dns: [1.1.1.1, 1.0.0.1]
+  # mtu: 1420
+  udp: true  
