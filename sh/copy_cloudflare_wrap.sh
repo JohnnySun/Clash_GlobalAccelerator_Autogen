@@ -21,12 +21,13 @@
 # under the License. 
 
 script_dir="$(cd "$(dirname "$0")" && pwd)"
-rm -rf $script_dir/../gen
-bash $script_dir/copy_cloudflare_wrap.sh $2 $3
-bash $script_dir/merge_dns.sh
-bash $script_dir/merge_proxies.sh
-bash $script_dir/merge_proxy_groups.sh
-bash $script_dir/merge_proxy_providers.sh $1
-bash $script_dir/merge_rule_providers.sh
-bash $script_dir/merge_rules.sh
-bash $script_dir/merge_final_config.sh
+
+output_file="$script_dir/../proxies/cloudflare_warp_proxies.yaml"
+input_file="$script_dir/../cloudflare_warp_proxies.yaml"
+
+PrivateKey64="$( echo "$1" | sed 's/[\\&*./+!]/\\&/g' )"
+sed -i 's/CF_WARP_PRIVATE_KEY/'"$PrivateKey64"'/' $input_file
+PublicKey64="$( echo "$2" | sed 's/[\\&*./+!]/\\&/g' )"
+sed -i 's/CF_WARP_PUBLIC_KEY/'"$PublicKey64"'/' $input_file
+
+cp $input_file $output_file

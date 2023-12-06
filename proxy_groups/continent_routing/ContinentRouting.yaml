@@ -3,6 +3,7 @@
   type: fallback
   proxies:
     - AF-PRIORITY-ROUTING
+    - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
   interval: 300
@@ -12,6 +13,7 @@
   type: fallback
   proxies:
     - AF-PRIORITY-ROUTING
+    - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
   interval: 300
@@ -21,6 +23,7 @@
   type: fallback
   proxies:
     - AS-PRIORITY-ROUTING
+    - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
   interval: 300
@@ -30,6 +33,7 @@
   type: fallback
   proxies:
     - EU-PRIORITY-ROUTING
+    - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
   interval: 300
@@ -39,6 +43,7 @@
   type: fallback
   proxies:
     - NA-PRIORITY-ROUTING
+    - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
   interval: 300
@@ -48,6 +53,7 @@
   type: fallback
   proxies:
     - OC-PRIORITY-ROUTING
+    - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
   interval: 300
@@ -57,6 +63,7 @@
   type: fallback
   proxies:
     - SA-PRIORITY-ROUTING
+    - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
   interval: 300

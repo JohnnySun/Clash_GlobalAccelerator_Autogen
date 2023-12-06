@@ -8,7 +8,8 @@ Android用户，可以使用 [Ipinfo.io MMDB Database Android](https://github.co
 # 特点
 1. 无需复杂的规则分流，该配置基于IPLocation自动实现最优路由选择
 2. 支持路由降级，当最优节点出现单点故障时，支持路由降级策略，优先保证可用性
-3. 支持Anycast最优路由，判断AnycastIP，实现就近路由
+3. 支持Cloudflare Warp，当整个机场被DDOS时，出现大面积可用性降级时，支持优先Fallback到CloudFlare Wrap
+4. 支持Anycast最优路由，判断AnycastIP，实现就近路由
 
 # 配置方法
 1. Fork该工程
@@ -17,6 +18,7 @@ Android用户，可以使用 [Ipinfo.io MMDB Database Android](https://github.co
 4. 前往 `Settings->Security->Secrets and variables->Action->Repository secrets` 中新增一个 `GIST_ID`，值为上一步中的 GistID
 5. 去Github生成两个Token（或者是一个Token）包含 Gist权限 私有Repo访问权限
 6. 前往 `Settings->Security->Secrets and variables->Action->Repository secrets` 中新增两个Token， 分别为`GIST_TOKEN` `REPO_ACCRSS_TOKEN`
-7. 前往 `Settings->Security->Secrets and variables->Action->Repository secrets` 中新增`DLER_SUBSCRIBE_TOKEN` 值为 [Dlercloud](https://dlercloud.com) 所提供的SUBSCRIBE_TOKEN
-8. (Optional) 如需设置私有的个人代理配置，可以参考 `/proxies` 文件夹下的格式，新建一个私有工程，创建私有工程后前往 `Settings->Security->Secrets and variables->Action->Repository secrets` 中新增 `PERSONAL_PROXIES_GIT` 并设置值为 `USERNAME/YOURPROJECT.git`
-9. 手动Commit一次该工程，CI会自动运行，并将结果发布到你的Secret Gist中
+7. 前往 `Settings->Security->Secrets and variables->Action->Repository secrets` 中新增两个Token， 分别为`CF_WARP_PRIVATE_KEY` `CF_WARP_PUBLIC_KEY`, 值分别为 CloudFlare Warp 的 Private/Public Key
+8. 前往 `Settings->Security->Secrets and variables->Action->Repository secrets` 中新增`DLER_SUBSCRIBE_TOKEN` 值为 [Dlercloud](https://dlercloud.com) 所提供的SUBSCRIBE_TOKEN
+9. (Optional) 如需设置私有的个人代理配置，可以参考 `/proxies` 文件夹下的格式，新建一个私有工程，创建私有工程后前往 `Settings->Security->Secrets and variables->Action->Repository secrets` 中新增 `PERSONAL_PROXIES_GIT` 并设置值为 `USERNAME/YOURPROJECT.git`
+10. 手动Commit一次该工程，CI会自动运行，并将结果发布到你的Secret Gist中

@@ -2,6 +2,7 @@
   type: fallback
   proxies:
     - TR-PRIORITY-ROUTING
+    - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
   interval: 300

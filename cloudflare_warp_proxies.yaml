@@ -1,0 +1,55 @@
+- name: "Warp-1"
+  type: wireguard
+  server: 162.159.192.214
+  port: 7103
+  ip: 172.16.0.2
+  ipv6: 2606:4700:d1::ab5c:2ee8:b277:3602
+  private-key: CF_WARP_PRIVATE_KEY
+  public-key: CF_WARP_PUBLIC_KEY
+  # preshared-key: base64
+  remote-dns-resolve: false
+  dns: [1.1.1.1, 1.0.0.1]
+  # mtu: 1420
+  udp: true  
+
+- name: "Warp-2"
+  type: wireguard
+  server: 162.159.195.200
+  port: 903
+  ip: 172.16.0.2
+  ipv6: 2606:4700:d0::ee93:721e:f5ac:7939
+  private-key: CF_WARP_PRIVATE_KEY
+  public-key: CF_WARP_PUBLIC_KEY
+  # preshared-key: base64
+  remote-dns-resolve: false
+  dns: [1.1.1.1, 1.0.0.1]
+  # mtu: 1420
+  udp: true  
+
+- name: "Warp-3"
+  type: wireguard
+  server: 162.159.192.160
+  port: 903
+  ip: 172.16.0.2
+  ipv6: 2606:4700:d0::a009:2396:a722:2aaf
+  private-key: CF_WARP_PRIVATE_KEY
+  public-key: CF_WARP_PUBLIC_KEY
+  # preshared-key: base64
+  remote-dns-resolve: false
+  dns: [1.1.1.1, 1.0.0.1]
+  # mtu: 1420
+  udp: true  
+
+- name: "Warp-4"
+  type: wireguard
+  server: 162.159.192.210
+  port: 903
+  ip: 172.16.0.2
+  ipv6: 2606:4700:d0::4266:c5f2:497f:cd0b
+  private-key: CF_WARP_PRIVATE_KEY
+  public-key: CF_WARP_PUBLIC_KEY
+  # preshared-key: base64
+  remote-dns-resolve: false
+  dns: [1.1.1.1, 1.0.0.1]
+  # mtu: 1420
+  udp: true  
