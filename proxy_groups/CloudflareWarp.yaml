@@ -1,10 +1,14 @@
 - name: "CLOUDFLARE-WARP"
-  type: url-test
+  type: load-balance
+  strategy: consistent-hashing
   proxies:
     - Warp-1
     - Warp-2
     - Warp-3
     - Warp-4
-    - Warp-Domain
+    - Warp6-1
+    - Warp6-2
+    - Warp6-3
+    - Warp6-4
   url: 'http://cp.cloudflare.com/generate_204'
   interval: 300
