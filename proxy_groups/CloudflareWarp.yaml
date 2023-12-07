@@ -2,13 +2,21 @@
   type: load-balance
   strategy: consistent-hashing
   proxies:
-    - Warp-1
-    - Warp-2
-    - Warp-3
-    - Warp-4
-    - Warp6-1
-    - Warp6-2
-    - Warp6-3
-    - Warp6-4
-  url: 'http://cp.cloudflare.com/generate_204'
+    - Engage-CFClient-V4-1
+    - Engage-CFClient-V4-2
+    - Engage-CFClient-V4-3
+    - Engage-CFClient-V4-4
+    - Engage-CFClient-V4-5
+    - Engage-CFClient-V4-6
+    - Engage-CFClient-V4-7
+    - Engage-CFClient-V4-8
+    - Engage-CFClient-V6-1
+    - Engage-CFClient-V6-2
+    - Engage-CFClient-V6-3
+    - Engage-CFClient-V6-4
+    - Engage-CFClient-V6-5
+    - Engage-CFClient-V6-6
+    - Engage-CFClient-V6-7
+    - Engage-CFClient-V6-8
+  url: 'http://cloudflarecp.com/'
   interval: 300
