@@ -4,6 +4,7 @@
   server: 162.159.204.185
   port: 2408
   ip: 172.16.0.2
+  ipv6: 2606:4700:110:84cb:7db0:499e:8eda:9656
   private-key: CF_WARP_PRIVATE_KEY
   public-key: CF_WARP_PUBLIC_KEY
   # preshared-key: base64
@@ -17,6 +18,7 @@
   server: 162.159.204.37
   port: 2408
   ip: 172.16.0.2
+  ipv6: 2606:4700:110:84cb:7db0:499e:8eda:9656
   private-key: CF_WARP_PRIVATE_KEY
   public-key: CF_WARP_PUBLIC_KEY
   # preshared-key: base64
@@ -30,6 +32,7 @@
   server: 188.114.99.149
   port: 878
   ip: 172.16.0.2
+  ipv6: 2606:4700:110:84cb:7db0:499e:8eda:9656
   private-key: CF_WARP_PRIVATE_KEY
   public-key: CF_WARP_PUBLIC_KEY
   # preshared-key: base64
@@ -43,6 +46,7 @@
   server: 188.114.98.4
   port: 4198
   ip: 172.16.0.2
+  ipv6: 2606:4700:110:84cb:7db0:499e:8eda:9656
   private-key: CF_WARP_PRIVATE_KEY
   public-key: CF_WARP_PUBLIC_KEY
   # preshared-key: base64
@@ -56,6 +60,7 @@
   server: 2606:4700:d0::3c25:71ca:a7b9:4521
   port: 894
   ip: 172.16.0.2
+  ipv6: 2606:4700:110:84cb:7db0:499e:8eda:9656
   private-key: CF_WARP_PRIVATE_KEY
   public-key: CF_WARP_PUBLIC_KEY
   # preshared-key: base64
@@ -69,6 +74,7 @@
   server: 2606:4700:d1::daa5:75ba:d8a8:6732
   port: 894
   ip: 172.16.0.2
+  ipv6: 2606:4700:110:84cb:7db0:499e:8eda:9656
   private-key: CF_WARP_PRIVATE_KEY
   public-key: CF_WARP_PUBLIC_KEY
   # preshared-key: base64
@@ -82,6 +88,7 @@
   server: 2606:4700:d0::d0b:390e:8e3f:6e04
   port: 1387
   ip: 172.16.0.2
+  ipv6: 2606:4700:110:84cb:7db0:499e:8eda:9656
   private-key: CF_WARP_PRIVATE_KEY
   public-key: CF_WARP_PUBLIC_KEY
   # preshared-key: base64
@@ -95,6 +102,7 @@
   server: 2606:4700:d0::1946:9d4a:d6b:b7d2
   port: 1387
   ip: 172.16.0.2
+  ipv6: 2606:4700:110:84cb:7db0:499e:8eda:9656
   private-key: CF_WARP_PRIVATE_KEY
   public-key: CF_WARP_PUBLIC_KEY
   # preshared-key: base64
