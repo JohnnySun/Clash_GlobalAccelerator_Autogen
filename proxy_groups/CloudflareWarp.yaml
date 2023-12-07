@@ -2,14 +2,6 @@
   type: load-balance
   strategy: consistent-hashing
   proxies:
-    - Engage-CFClient-V4-1
-    - Engage-CFClient-V4-2
-    - Engage-CFClient-V4-3
-    - Engage-CFClient-V4-4
-    - Engage-CFClient-V4-5
-    - Engage-CFClient-V4-6
-    - Engage-CFClient-V4-7
-    - Engage-CFClient-V4-8
     - Engage-CFClient-V6-1
     - Engage-CFClient-V6-2
     - Engage-CFClient-V6-3
@@ -18,5 +10,13 @@
     - Engage-CFClient-V6-6
     - Engage-CFClient-V6-7
     - Engage-CFClient-V6-8
+    - Engage-CFClient-V4-1
+    - Engage-CFClient-V4-2
+    - Engage-CFClient-V4-3
+    - Engage-CFClient-V4-4
+    - Engage-CFClient-V4-5
+    - Engage-CFClient-V4-6
+    - Engage-CFClient-V4-7
+    - Engage-CFClient-V4-8
   url: 'http://cloudflarecp.com/'
   interval: 300
