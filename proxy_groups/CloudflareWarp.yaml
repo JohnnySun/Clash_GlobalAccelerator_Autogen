@@ -2,7 +2,6 @@
   type: load-balance
   strategy: consistent-hashing
   proxies:
-    - Engage-CFClient-Forward
     - Engage-CFClient-V6-1
     - Engage-CFClient-V6-2
     - Engage-CFClient-V6-3
