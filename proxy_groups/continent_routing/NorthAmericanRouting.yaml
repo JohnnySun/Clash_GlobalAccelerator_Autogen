@@ -3,6 +3,7 @@
   proxies:
     - US-PRIORITY-ROUTING
     - NNR-HK-HKT
+    - Engage-CFClient-Forward
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
@@ -13,6 +14,7 @@
   proxies:
     - CA-PRIORITY-ROUTING
     - NNR-HK-HKT
+    - Engage-CFClient-Forward
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'

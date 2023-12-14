@@ -3,6 +3,7 @@
   proxies:
     - JP-PRIORITY-ROUTING
     - NNR-HK-HKT
+    - Engage-CFClient-Forward
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
@@ -13,6 +14,7 @@
   proxies:
     - HK-PRIORITY-ROUTING
     - NNR-HK-HKT
+    - Engage-CFClient-Forward
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
@@ -23,6 +25,7 @@
   proxies:
     - SG-PRIORITY-ROUTING
     - NNR-HK-HKT
+    - Engage-CFClient-Forward
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
@@ -33,6 +36,7 @@
   proxies:
     - TW-PRIORITY-ROUTING
     - NNR-HK-HKT
+    - Engage-CFClient-Forward
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
@@ -43,6 +47,7 @@
   proxies:
     - KR-PRIORITY-ROUTING
     - NNR-HK-HKT
+    - Engage-CFClient-Forward
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
@@ -53,6 +58,7 @@
   proxies:
     - TH-PRIORITY-ROUTING
     - NNR-HK-HKT
+    - Engage-CFClient-Forward
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
@@ -63,6 +69,7 @@
   proxies:
     - IN-PRIORITY-ROUTING
     - NNR-HK-HKT
+    - Engage-CFClient-Forward
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
@@ -73,6 +80,7 @@
   proxies:
     - PH-PRIORITY-ROUTING
     - NNR-HK-HKT
+    - Engage-CFClient-Forward
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'

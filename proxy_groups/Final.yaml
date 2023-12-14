@@ -13,6 +13,7 @@
   proxies:
     - FINAL-USER-PRIORITY-ROUTING
     - NNR-HK-HKT
+    - Engage-CFClient-Forward
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
