@@ -2,8 +2,8 @@
   type: fallback
   proxies:
     - GB-PRIORITY-ROUTING
-    - Engage-CFClient-Forward
-    - NNR-HK-HKT
+    - Engage-CFClient-Forward
+    - NNR-HK-HKT
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
@@ -13,8 +13,8 @@
   type: fallback
   proxies:
     - DE-PRIORITY-ROUTING
-    - Engage-CFClient-Forward
-    - NNR-HK-HKT
+    - Engage-CFClient-Forward
+    - NNR-HK-HKT
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
@@ -24,8 +24,8 @@
   type: fallback
   proxies:
     - FR-PRIORITY-ROUTING
-    - Engage-CFClient-Forward
-    - NNR-HK-HKT
+    - Engage-CFClient-Forward
+    - NNR-HK-HKT
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
@@ -35,8 +35,8 @@
   type: fallback
   proxies:
     - RU-PRIORITY-ROUTING
-    - Engage-CFClient-Forward
-    - NNR-HK-HKT
+    - Engage-CFClient-Forward
+    - NNR-HK-HKT
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'

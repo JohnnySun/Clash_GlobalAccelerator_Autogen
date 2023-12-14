@@ -2,8 +2,8 @@
   type: fallback
   proxies:
     - JP-PRIORITY-ROUTING
-    - Engage-CFClient-Forward
-    - NNR-HK-HKT
+    - Engage-CFClient-Forward
+    - NNR-HK-HKT
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
@@ -13,8 +13,8 @@
   type: fallback
   proxies:
     - HK-PRIORITY-ROUTING
-    - Engage-CFClient-Forward
-    - NNR-HK-HKT
+    - Engage-CFClient-Forward
+    - NNR-HK-HKT
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
@@ -24,8 +24,8 @@
   type: fallback
   proxies:
     - SG-PRIORITY-ROUTING
-    - Engage-CFClient-Forward
-    - NNR-HK-HKT
+    - Engage-CFClient-Forward
+    - NNR-HK-HKT
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
@@ -35,8 +35,8 @@
   type: fallback
   proxies:
     - TW-PRIORITY-ROUTING
-    - Engage-CFClient-Forward
-    - NNR-HK-HKT
+    - Engage-CFClient-Forward
+    - NNR-HK-HKT
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
@@ -46,8 +46,8 @@
   type: fallback
   proxies:
     - KR-PRIORITY-ROUTING
-    - Engage-CFClient-Forward
-    - NNR-HK-HKT
+    - Engage-CFClient-Forward
+    - NNR-HK-HKT
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
@@ -57,8 +57,8 @@
   type: fallback
   proxies:
     - TH-PRIORITY-ROUTING
-    - Engage-CFClient-Forward
-    - NNR-HK-HKT
+    - Engage-CFClient-Forward
+    - NNR-HK-HKT
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
@@ -68,8 +68,8 @@
   type: fallback
   proxies:
     - IN-PRIORITY-ROUTING
-    - Engage-CFClient-Forward
-    - NNR-HK-HKT
+    - Engage-CFClient-Forward
+    - NNR-HK-HKT
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
@@ -79,8 +79,8 @@
   type: fallback
   proxies:
     - PH-PRIORITY-ROUTING
-    - Engage-CFClient-Forward
-    - NNR-HK-HKT
+    - Engage-CFClient-Forward
+    - NNR-HK-HKT
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
