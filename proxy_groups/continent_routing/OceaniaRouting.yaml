@@ -2,6 +2,7 @@
   type: fallback
   proxies:
     - AU-PRIORITY-ROUTING
+    - NNR-HK-HKT
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'

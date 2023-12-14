@@ -12,6 +12,7 @@
   type: fallback
   proxies:
     - FINAL-USER-PRIORITY-ROUTING
+    - NNR-HK-HKT
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
