@@ -1,6 +1,6 @@
 - name: "JP-PRIORITY-ROUTING"
   type: fallback
-  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Japan.png
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
   use:
     - JP-IEPL-AIR
     ++asia_default++

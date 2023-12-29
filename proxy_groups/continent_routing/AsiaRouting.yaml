@@ -1,6 +1,6 @@
 - name: "JP"
   type: fallback
-  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Japan.png
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
   proxies:
     - JP-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
