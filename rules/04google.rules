@@ -1,5 +1,5 @@
 # Google Anycast
-DOMAIN-KEYWORD,google,HK
+#DOMAIN-KEYWORD,google,HK
 DOMAIN,google.cn,HK
 DOMAIN-SUFFIX,google.cn,HK
 DOMAIN,google.com,HK
