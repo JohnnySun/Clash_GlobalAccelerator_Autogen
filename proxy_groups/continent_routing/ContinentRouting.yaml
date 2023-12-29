@@ -45,7 +45,7 @@
 # North American default router
 - name: "NA"
   type: fallback
-  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States_Map.png
+  icon: https://fastly.jsdelivr.net/gh/JohnnySun/Router-Rule@master/IconSet/Color/NorthAmerica_Map.png
   proxies:
     - NA-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
