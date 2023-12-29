@@ -1,6 +1,6 @@
 Anycast:
   type: http
   behavior: ipcidr
-  url: https://fastly.jsdelivr.net/gh/JohnnySun/Router-Rule@master/ClashX/rule_providers/anycast.yaml
+  url: https://cdn.libz.so/gh/JohnnySun/Router-Rule/master/ClashX/rule_providers/anycast.yaml
   path: ./rules-providers/AnyCastAddress.yaml
   interval: 3600
