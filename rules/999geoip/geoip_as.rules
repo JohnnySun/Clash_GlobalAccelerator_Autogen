@@ -1,7 +1,7 @@
 # Continent Asia
 
 # Southeast Asia Customize Router
-GEOIP, CN, DIRECT
+GEOIP, CN, DIRECT, no-resolve
 GEOIP, JP, JP
 GEOIP, HK, HK
 GEOIP, SG, SG
