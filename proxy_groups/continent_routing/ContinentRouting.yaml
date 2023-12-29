@@ -12,6 +12,7 @@
 # Antarctica default router
 - name: "AN"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Area.png
   proxies:
     - AF-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
