@@ -1,2 +1,1 @@
 RULE-SET, Reject-DOMAIN, ADBlock
-RULE-SET, Reject-IPCIDR, ADBlock
