@@ -7,3 +7,8 @@ IP-CIDR, 169.254.0.0/16, DIRECT
 # Dedicated space for carrier-grade NAT deployment
 # if your clash config not use any of dedicated space, just remove #
 # IP-CIDR, 100.64.0.0/10, DIRECT
+
+# Private IPv6 addresses
+IP-CIDR6, fe80::/10, DIRECT
+IP-CIDR6, fd00::/8, DIRECT
+IP-CIDR6, fc00::/8, DIRECT

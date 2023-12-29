@@ -1,6 +1,0 @@
-Telegram:
-  type: http
-  behavior: classical
-  url: https://fastly.jsdelivr.net/gh/dler-io/Rules@main/Clash/Provider/Telegram.yaml
-  path: ./Rules/Telegram.yaml
-  interval: 86400
