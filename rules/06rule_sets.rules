@@ -1,2 +1,3 @@
 GEOIP, CN, DIRECT
+RULE-SET, Reject-IPCIDR, ADBlock
 RULE-SET, Anycast, HK
