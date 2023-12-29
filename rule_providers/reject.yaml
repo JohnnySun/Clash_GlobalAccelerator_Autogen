@@ -1,15 +1,15 @@
 Reject-DOMAIN:
   type: http
-  # stash had some bug when using behavior domain, it won't math any sites. 
-  # therefor, we change behavior to classical.
-  behavior: classical
+  behavior: domain
+  format: yaml
   url: https://fastly.jsdelivr.net/gh/JohnnySun/Router-Rule@master/ClashX/rule_providers/ad_block/ad_block_domain.yaml
-  path: ./Rules/Reject.yaml
+  path: ./Rules/Reject-DOMAIN.txt
   interval: 86400
 
 Reject-IPCIDR:
   type: http
   behavior: ipcidr
+  format: yaml
   url: https://fastly.jsdelivr.net/gh/JohnnySun/Router-Rule@master/ClashX/rule_providers/ad_block/ad_block_ipcidr.yaml
-  path: ./Rules/Reject.yaml
+  path: ./Rules/Reject-IPCIDR.yaml
   interval: 86400
