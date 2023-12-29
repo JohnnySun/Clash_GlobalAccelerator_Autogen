@@ -1,4 +1,5 @@
 - name: "CLOUDFLARE-WARP"
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Cloudflare.png
   type: load-balance
   strategy: consistent-hashing
   proxies:

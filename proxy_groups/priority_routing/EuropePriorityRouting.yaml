@@ -1,5 +1,6 @@
 - name: "GB-PRIORITY-ROUTING"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_Kingdom.png
   use:
     - GB-IEPL-AIR
     ++europe_default++
@@ -8,6 +9,7 @@
 
 - name: "DE-PRIORITY-ROUTING"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Germany.png
   use:
     - DE-IEPL-AIR
     ++europe_default++
@@ -16,6 +18,7 @@
 
 - name: "FR-PRIORITY-ROUTING"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/France.png
   use:
     - FR-IEPL-AIR
     ++europe_default++
@@ -24,6 +27,7 @@
 
 - name: "RU-PRIORITY-ROUTING"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Russia.png
   use:
     - RU-IEPL-AIR
     ++europe_default++

@@ -1,5 +1,6 @@
 - name: "AU"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Australia.png
   proxies:
     - AU-PRIORITY-ROUTING
     - CLOUDFLARE-WARP

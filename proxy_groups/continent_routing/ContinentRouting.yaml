@@ -1,6 +1,7 @@
-# Asia default router
+# Africa default router
 - name: "AF"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Africa_Map.png
   proxies:
     - AF-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
@@ -21,6 +22,7 @@
 # Asia default router
 - name: "AS"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Asia_Map.png
   proxies:
     - AS-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
@@ -31,6 +33,7 @@
 # Europe default router
 - name: "EU"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Europe_Map.png
   proxies:
     - EU-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
@@ -41,6 +44,7 @@
 # North American default router
 - name: "NA"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States_Map.png
   proxies:
     - NA-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
@@ -51,6 +55,7 @@
 # Oceania default router
 - name: "OC"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Oceania_Map.png
   proxies:
     - OC-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
@@ -61,6 +66,7 @@
 # South American default router
 - name: "SA"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/LA_Map.png
   proxies:
     - SA-PRIORITY-ROUTING
     - CLOUDFLARE-WARP

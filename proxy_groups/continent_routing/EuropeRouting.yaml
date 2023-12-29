@@ -1,5 +1,6 @@
 - name: "GB"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_Kingdom.png
   proxies:
     - GB-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
@@ -9,6 +10,7 @@
 
 - name: "DE"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Germany.png
   proxies:
     - DE-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
@@ -18,6 +20,7 @@
 
 - name: "FR"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/France.png
   proxies:
     - FR-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
@@ -27,6 +30,7 @@
 
 - name: "RU"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Russia.png
   proxies:
     - RU-PRIORITY-ROUTING
     - CLOUDFLARE-WARP

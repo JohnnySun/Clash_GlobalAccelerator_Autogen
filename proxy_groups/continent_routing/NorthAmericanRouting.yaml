@@ -1,5 +1,6 @@
 - name: "US"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
   proxies:
     - US-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
@@ -9,6 +10,7 @@
 
 - name: "CA"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Canada.png
   proxies:
     - CA-PRIORITY-ROUTING
     - CLOUDFLARE-WARP

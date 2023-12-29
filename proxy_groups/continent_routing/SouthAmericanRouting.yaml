@@ -1,5 +1,6 @@
 - name: "BR"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Brazil.png
   proxies:
     - BR-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
@@ -9,6 +10,7 @@
 
 - name: "AR"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Argentina.png
   proxies:
     - AR-PRIORITY-ROUTING
     - CLOUDFLARE-WARP

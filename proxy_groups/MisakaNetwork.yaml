@@ -1,4 +1,5 @@
 - name: "MISAKA-TIANJIN"
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Server.png
   type: fallback
   proxies:
     - Misaka_Tianjin_Edge
@@ -7,6 +8,7 @@
   interval: 300
 
 - name: "MISAKA-BEIJING"
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Server.png
   type: fallback
   proxies:
     - Misaka_Beijing_Edge
@@ -15,6 +17,7 @@
   interval: 300
 
 - name: "MISAKA-ULANQAB"
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Server.png
   type: fallback
   proxies:
     - Misaka_Ulanqab_Edge

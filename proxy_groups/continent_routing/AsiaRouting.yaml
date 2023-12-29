@@ -1,5 +1,6 @@
 - name: "JP"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Japan.png
   proxies:
     - JP-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
@@ -9,6 +10,7 @@
 
 - name: "HK"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
   proxies:
     - HK-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
@@ -18,6 +20,7 @@
 
 - name: "SG"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
   proxies:
     - SG-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
@@ -27,6 +30,7 @@
 
 - name: "TW"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
   proxies:
     - TW-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
@@ -36,6 +40,7 @@
 
 - name: "KR"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Korea.png
   proxies:
     - KR-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
@@ -45,6 +50,7 @@
 
 - name: "TH"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Thailand.png
   proxies:
     - TH-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
@@ -54,6 +60,7 @@
 
 - name: "IN"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/India.png
   proxies:
     - IN-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
@@ -63,6 +70,7 @@
 
 - name: "PH"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Philippines.png
   proxies:
     - PH-PRIORITY-ROUTING
     - CLOUDFLARE-WARP

@@ -1,5 +1,6 @@
 - name: "JP-PRIORITY-ROUTING"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Japan.png
   use:
     - JP-IEPL-AIR
     ++asia_default++
@@ -8,6 +9,7 @@
 
 - name: "HK-PRIORITY-ROUTING"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
   use:
     - HK-IEPL-STD
     - HK-IEPL-AIR
@@ -17,6 +19,7 @@
 
 - name: "SG-PRIORITY-ROUTING"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
   use:
     - SG-IEPL-STD
     - SG-IEPL-AIR
@@ -26,6 +29,7 @@
 
 - name: "TW-PRIORITY-ROUTING"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
   use:
     - TW-IEPL-STD
     - TW-IEPL-AIR
@@ -35,6 +39,7 @@
 
 - name: "KR-PRIORITY-ROUTING"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Korea.png
   use:
     - KR-IEPL-AIR
     ++asia_default++
@@ -43,6 +48,7 @@
 
 - name: "TH-PRIORITY-ROUTING"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Thailand.png
   use:
     - TH-IEPL-AIR
     ++asia_default++
@@ -51,6 +57,7 @@
 
 - name: "IN-PRIORITY-ROUTING"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/India.png
   use:
     - IN-IEPL-AIR
     ++asia_default++
@@ -59,6 +66,7 @@
 
 - name: "PH-PRIORITY-ROUTING"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Philippines.png
   use:
     - PH-IEPL-AIR
     ++asia_default++

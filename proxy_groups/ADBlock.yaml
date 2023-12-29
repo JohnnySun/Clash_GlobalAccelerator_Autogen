@@ -1,5 +1,6 @@
 - name: "ADBlock"
   type: select
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Advertising.png
   proxies:
       - REJECT
       - DIRECT

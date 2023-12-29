@@ -1,5 +1,6 @@
 - name: "TR"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Turkey.png
   proxies:
     - TR-PRIORITY-ROUTING
     - CLOUDFLARE-WARP

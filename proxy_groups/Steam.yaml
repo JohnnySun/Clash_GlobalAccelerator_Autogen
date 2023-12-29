@@ -1,4 +1,5 @@
 - name: "Steam"
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Steam.png
   type: select
   proxies:
       - DIRECT

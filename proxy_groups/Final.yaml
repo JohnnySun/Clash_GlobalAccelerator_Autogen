@@ -1,4 +1,5 @@
 - name: "FINAL-USER-PRIORITY-ROUTING"
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
   type: select
   proxies:
       - HK
@@ -9,6 +10,7 @@
       - DIRECT
       
 - name: "FINAL"
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
   type: fallback
   proxies:
     - FINAL-USER-PRIORITY-ROUTING

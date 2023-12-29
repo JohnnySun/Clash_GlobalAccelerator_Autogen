@@ -1,5 +1,6 @@
 - name: "BR-PRIORITY-ROUTING"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Brazil.png
   use:
     - BR-IEPL-AIR
     ++south_american_default++
@@ -8,6 +9,7 @@
 
 - name: "AR-PRIORITY-ROUTING"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Argentina.png
   use:
     - AR-IEPL-AIR
     ++south_american_default++

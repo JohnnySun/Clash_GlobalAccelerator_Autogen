@@ -1,5 +1,6 @@
 - name: "US-PRIORITY-ROUTING"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
   use:
     - US-IEPL-AIR
     ++north_american_default++
@@ -8,6 +9,7 @@
 
 - name: "CA-PRIORITY-ROUTING"
   type: fallback
+  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Canada.png
   use:
     - CA-IEPL-AIR
     ++north_american_default++
