@@ -14,7 +14,7 @@
   type: fallback
   icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Area.png
   proxies:
-    - AF-PRIORITY-ROUTING
+    - AN-PRIORITY-ROUTING
     - CLOUDFLARE-WARP
     - DIRECT
   url: 'http://connectivitycheck.cbg-app.huawei.com/generate_204'
