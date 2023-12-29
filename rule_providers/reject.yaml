@@ -1,8 +1,8 @@
 Reject-DOMAIN:
   type: http
   behavior: domain
-  format: yaml
-  url: https://fastly.jsdelivr.net/gh/JohnnySun/Router-Rule@master/ClashX/rule_providers/ad_block/ad_block_domain.yaml
+  format: text
+  url: https://fastly.jsdelivr.net/gh/JohnnySun/Router-Rule@master/ClashX/rule_providers/ad_block/ad_block_domain.text
   path: ./Rules/Reject-DOMAIN.txt
   interval: 86400
 
