@@ -23,7 +23,8 @@ jobs:
       - name: Clone Personal Override
         run: |
           rm -rf proxies
-          [ -n "${{ secrets.REPO_ACCESS_TOKEN }}" ] && git clone https://x-access-token:${{ secrets.REPO_ACCESS_TOKEN }}@github.com/${{ secrets.PERSONAL_PROXIES_GIT_DEV }} overwrite
+          [ -n "${{ secrets.REPO_ACCESS_TOKEN }}" ] && git clone https://x-access-token:${{ secrets.REPO_ACCESS_TOKEN }}@github.com/${{ secrets.PERSONAL_PROXIES_GIT_DEV }} overwrite || true
+          mkdir -p overwrite
       - name: Copy Personal Override To Working Directory
         run: cp -R ./overwrite/. ./
       - name: Generate ClashXPro configuration
