@@ -1,6 +1,7 @@
 # Clash Global Accelerator Autogen
 “Clash 全球网络加速服务”配置自动生成/发布工具，充分利用机场节点，提供全球最优路由选择
-按IP地址自动选择最优路由配置，万能Clash配置，无需各种规则分流，自动选择最优路由。
+
+按IP地址自动选择最优路由配置，不同于主流Clash配置文件，无需各种规则分流，自动选择最优路由。
 
 由于该路由规则依赖精准的GeoIP数据库，建议搭配 [Ipinfo.io MMDB Database](https://github.com/JohnnySun/geoip) 使用
 
@@ -12,6 +13,7 @@ Android用户，可以使用 [Ipinfo.io MMDB Database Android](https://github.co
 3. 支持Cloudflare Warp，当整个机场被DDOS时，出现大面积可用性降级时，支持优先Fallback到CloudFlare Wrap
 4. 支持Anycast最优路由，判断AnycastIP，实现就近路由
 5. 支持CI自动化发布配置，配合clash定时更新，实现配置远端发布
+6. 支持广告过滤/拦截
 
 # 配置方法
 1. Fork该工程
