@@ -1,15 +1,11 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Update Clash Gists
+name: Update Clash Gists - Dev Only
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
-    branches: [ "dler" ]
-  pull_request:
-    branches: [ "dler" ]
-
+    branches: [ "dler-dev" ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -27,7 +23,7 @@ jobs:
       - name: Clone Personal Override
         run: |
           rm -rf proxies
-          [ -n "${{ secrets.REPO_ACCESS_TOKEN }}" ] && git clone https://x-access-token:${{ secrets.REPO_ACCESS_TOKEN }}@github.com/${{ secrets.PERSONAL_PROXIES_GIT }} overwrite || true
+          [ -n "${{ secrets.REPO_ACCESS_TOKEN }}" ] && git clone https://x-access-token:${{ secrets.REPO_ACCESS_TOKEN }}@github.com/${{ secrets.PERSONAL_PROXIES_GIT_DEV }} overwrite || true
       - name: Copy Personal Override To Working Directory
         run: |
           mkdir -p overwrite
@@ -39,7 +35,7 @@ jobs:
         uses: exuanbo/actions-deploy-gist@v1
         with:
           token: ${{ secrets.GIST_TOKEN }}
-          gist_id: ${{ secrets.GIST_ID }}
+          gist_id: ${{ secrets.GIST_ID_DEV }}
           gist_file_name: clash_config.yaml
           file_path: ./gen/config/clash_config.yaml
           file_type: text
