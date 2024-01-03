@@ -1,4 +1,6 @@
 # Clash Global Accelerator Autogen
+Latest generate status: [![Update Clash Gists](https://github.com/JohnnySun/Clash_GlobalAccelerator_Autogen/actions/workflows/update_clash_gists.yml/badge.svg)](https://github.com/JohnnySun/Clash_GlobalAccelerator_Autogen/actions/workflows/update_clash_gists.yml)
+
 “Clash 全球网络加速服务”配置自动生成/发布工具，充分利用机场节点，提供全球最优路由选择
 
 按IP地址自动选择最优路由配置，不同于主流Clash配置文件，无需各种规则分流，自动选择最优路由。
@@ -29,3 +31,7 @@ Android用户，可以使用 [Ipinfo.io MMDB Database Android](https://github.co
 
 # Personal Config Override
 (Optional) 如需设置私人的配置复写，可以新建一个私有工程，创建私有工程后前往 `Settings->Security->Secrets and variables->Action->Repository secrets` 中新增 `PERSONAL_PROXIES_GIT` 并设置值为 `USERNAME/YOURPROJECT.git` 私有工程下的目录结构和本工程相同，生成配置前，CI会先将私人工程中的文件与本工程合并，并生成最终的配置文件
+
+## 项目 Star 数增长趋势
+[![Stargazers over time](https://starchart.cc/JohnnySun/Clash_GlobalAccelerator_Autogen.svg)](https://starchart.cc/JohnnySun/Clash_GlobalAccelerator_Autogen)
+
