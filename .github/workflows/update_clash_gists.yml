@@ -24,10 +24,14 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - name: Clone Personal Proxies Override
+      - name: Clone Personal Override
         run: |
           rm -rf proxies
-          [ -n "${{ secrets.REPO_ACCRSS_TOKEN }}" ] && git clone https://x-access-token:${{ secrets.REPO_ACCRSS_TOKEN }}@github.com/${{ secrets.PERSONAL_PROXIES_GIT }} proxies
+          [ -n "${{ secrets.REPO_ACCESS_TOKEN }}" ] && git clone https://x-access-token:${{ secrets.REPO_ACCESS_TOKEN }}@github.com/${{ secrets.PERSONAL_PROXIES_GIT }} overwrite || true
+      - name: Copy Personal Override To Working Directory
+        run: |
+          mkdir -p overwrite
+          cp -R ./overwrite/. ./
       - name: Generate ClashXPro configuration
         run: sh ./sh/gen_clash_config.sh ${{ secrets.DLER_SUBSCRIBE_TOKEN }} ${{ secrets.CF_WARP_PRIVATE_KEY }} ${{ secrets.CF_WARP_PUBLIC_KEY }}
       # Update clash_config.yaml to gist 
