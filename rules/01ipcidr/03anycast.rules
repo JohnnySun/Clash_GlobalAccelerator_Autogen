@@ -1,0 +1,4 @@
+# if this ip is in range of china IPCIDR
+# even it's an anycast ip, there's no needed send route to HK 
+GEOIP, CN, DIRECT
+RULE-SET, Anycast, HK

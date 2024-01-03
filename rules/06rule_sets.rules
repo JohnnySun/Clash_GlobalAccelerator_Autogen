@@ -1,4 +1,0 @@
-RULE-SET, Reject-IPCIDR, ADBlock
-
-GEOIP, CN, DIRECT
-RULE-SET, Anycast, HK
