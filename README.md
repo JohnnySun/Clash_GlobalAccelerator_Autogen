@@ -1,4 +1,4 @@
-# Clash Global Accelerator Autogen
+# Clash Global Accelerator Config Autogen
 Latest generate status: [![Update Clash Gists](https://github.com/JohnnySun/Clash_GlobalAccelerator_Autogen/actions/workflows/update_clash_gists.yml/badge.svg)](https://github.com/JohnnySun/Clash_GlobalAccelerator_Autogen/actions/workflows/update_clash_gists.yml)
 
 “Clash 全球网络加速服务”配置自动生成/发布工具，充分利用机场节点，提供全球最优路由选择
