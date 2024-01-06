@@ -17,6 +17,8 @@ Android用户，可以使用 [Ipinfo.io MMDB Database Android](https://github.co
 5. 支持Anycast最优路由，判断AnycastIP，实现就近路由
 6. 支持CI自动化发布配置，配合clash定时更新，实现配置远端发布
 7. 支持广告过滤/拦截
+8. Encrypted GeoDNS Support，国内域名的DNS查询能确保匹配到最近的CDN，海外域名尽可能匹配HK/TW的CDN地址
+8. 优化过的Domain/IP过滤器，优先匹配Domain其次是IP，避免手写配置时由于排序混乱导致的匹配的Domain被提前进行DNS解析导致的耗时问题
 
 # 配置方法
 1. Fork该工程
