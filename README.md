@@ -11,11 +11,12 @@ Android用户，可以使用 [Ipinfo.io MMDB Database Android](https://github.co
 
 # 特点
 1. 无需复杂的规则分流，该配置基于IPLocation自动实现最优路由选择
-2. 支持路由降级，当最优节点出现单点故障时，支持路由降级策略，优先保证可用性
-3. 支持Cloudflare Warp，当整个机场被DDOS时，出现大面积可用性降级时，支持优先Fallback到CloudFlare Wrap
-4. 支持Anycast最优路由，判断AnycastIP，实现就近路由
-5. 支持CI自动化发布配置，配合clash定时更新，实现配置远端发布
-6. 支持广告过滤/拦截
+2. 默认按IP所在/大洲国家配置默认路由，充分利用机场提供的各种落地节点，实现就近流量出口，尽可能减少在数据包公网中传递过长的距离
+3. 支持路由降级，当最优节点出现单点故障时，支持路由降级策略，优先保证可用性
+4. 支持Cloudflare Warp，当整个机场被DDOS时，出现大面积可用性降级时，支持优先Fallback到CloudFlare Wrap
+5. 支持Anycast最优路由，判断AnycastIP，实现就近路由
+6. 支持CI自动化发布配置，配合clash定时更新，实现配置远端发布
+7. 支持广告过滤/拦截
 
 # 配置方法
 1. Fork该工程
