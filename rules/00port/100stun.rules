@@ -5,3 +5,6 @@
 
 DST-PORT,3478,DIRECT
 DST-PORT,5349,DIRECT
+
+# stun*.l.google.com use this port
+DST-PORT,19302,DIRECT
