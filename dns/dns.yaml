@@ -12,6 +12,24 @@ dns:
     - 223.6.6.6
   # enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16 # Fake IP addresses pool CIDR
+  fake-ip-filter:
+  - "+.stun.*.*"
+  - "+.stun.*.*.*"
+  - "+.stun.*.*.*.*"
+  - "ddns.*.*"
+  - "ddns.*.*.*"
+  - "lens.l.google.com"
+  - "stun.l.google.com"
+  - "*.n.n.srv.nintendo.net"
+  - "*.mcdn.bilivideo.cn"
+  - "dns.msftncsi.com"
+  - "www.msftncsi.com"
+  - "www.msftconnecttest.com"
+  - "connect.rom.miui.com"
+  - "+.asuscomm.cn"
+  - "+.asuscomm.com"
+  - "WORKGROUP"
+
   # use-hosts: true # lookup hosts and return IP record
 
   # search-domains: [local] # search domains for A/AAAA record
