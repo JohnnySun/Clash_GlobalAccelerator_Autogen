@@ -1,0 +1,7 @@
+# STUN Session Traversal Utilities for NAT; 
+# originally Simple Traversal of UDP through NAT is a standardized set of methods,
+# including a network protocol, for traversal of NAT gateways in applications of real-time voice,
+# video, messaging, and other interactive communications.
+
+DST-PORT,3478,DIRECT
+DST-PORT,5349,DIRECT
