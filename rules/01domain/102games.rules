@@ -17,7 +17,7 @@ DOMAIN-SUFFIX,steamcdn-a.akamaihd.net,Steam
 DOMAIN-SUFFIX,steamstat.us,Steam
 DOMAIN-SUFFIX,steamserver.net,Steam
 
-#Gaijjn
-DOMAIN-SUFFIX,gaijin.net,SG
-DOMAIN-SUFFIX,gaijinent.com,SG
-DOMAIN-SUFFIX,warthunder.com,SG
+# Gaijjn
+# DOMAIN-SUFFIX,gaijin.net,AS
+# DOMAIN-SUFFIX,gaijinent.com,AS
+# DOMAIN-SUFFIX,warthunder.com,AS
