@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Update Clash Gists - Rivoreo Client
+name: Update Clash Gists - Rivoreo HKG Server
 
 # Controls when the workflow will run
 on:
@@ -17,6 +17,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - name: Rivoreo Client Generator Could Not Running At Main Branch
+      - name: Rivoreo HKG Server Generator Could Not Running At Main Branch
         run: |
           exit 1
