@@ -1,3 +1,0 @@
-# Microsoft DNS configuration
-"bing.com": "https://101.101.101.101/dns-query"
-"www.bing.com": "https://101.101.101.101/dns-query"

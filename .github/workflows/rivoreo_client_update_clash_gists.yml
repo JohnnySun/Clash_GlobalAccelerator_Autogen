@@ -1,11 +1,11 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Update Clash Gists - Dev Only
+name: Update Clash Gists - Rivoreo Client
 
 # Controls when the workflow will run
 on:
   push:
-    branches: [ "dler-dev" ]
+    branches: [ "rivoreo_accelerator_client" ]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -23,7 +23,8 @@ jobs:
       - name: Clone Personal Override
         run: |
           rm -rf proxies
-          [ -n "${{ secrets.REPO_ACCESS_TOKEN }}" ] && git clone https://x-access-token:${{ secrets.REPO_ACCESS_TOKEN }}@github.com/${{ secrets.PERSONAL_PROXIES_GIT_DEV }} overwrite || true
+          GIT_BRANCH="rivoreo_accelerator_client"
+          [ -n "${{ secrets.REPO_ACCESS_TOKEN }}" ] && git clone -b $GIT_BRANCH https://x-access-token:${{ secrets.REPO_ACCESS_TOKEN }}@github.com/${{ secrets.RIVOREO_CONFIG_GIT }} overwrite || true
       - name: Copy Personal Override To Working Directory
         run: |
           mkdir -p overwrite
@@ -35,7 +36,7 @@ jobs:
         uses: exuanbo/actions-deploy-gist@v1
         with:
           token: ${{ secrets.GIST_TOKEN }}
-          gist_id: ${{ secrets.GIST_ID_DEV }}
+          gist_id: ${{ secrets.GIST_ID }}
           gist_file_name: clash_config.yaml
-          file_path: ./gen/config/clash_config.yaml
+          file_path: ./gen/config/rivoreo_clash_client_config.yaml
           file_type: text

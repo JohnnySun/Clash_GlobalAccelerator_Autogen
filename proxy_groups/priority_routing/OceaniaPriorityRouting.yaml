@@ -1,7 +1,0 @@
-- name: "AU-PRIORITY-ROUTING"
-  type: fallback
-  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Australia.png
-  use:
-    ++oceania_default++
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300

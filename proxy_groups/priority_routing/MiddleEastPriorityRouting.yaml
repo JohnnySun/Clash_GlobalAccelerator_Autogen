@@ -1,8 +1,0 @@
-- name: "TR-PRIORITY-ROUTING"
-  type: fallback
-  icon: https://fastly.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Turkey.png
-  use:
-    - TR-IEPL-AIR
-    ++europe_default++
-  url: 'http://www.gstatic.com/generate_204'
-  interval: 300

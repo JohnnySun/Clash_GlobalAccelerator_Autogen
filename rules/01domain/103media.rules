@@ -1,5 +1,0 @@
-DOMAIN-SUFFIX,disney-plus.net,HK
-DOMAIN-SUFFIX,bamgrid.com,HK
-# NGM Issue is free to read out of the country UK & US & CA, therefor routing the NGM request to HK
-DOMAIN,www.nationalgeographic.com,HK
-DOMAIN,nationalgeographic.com,HK
