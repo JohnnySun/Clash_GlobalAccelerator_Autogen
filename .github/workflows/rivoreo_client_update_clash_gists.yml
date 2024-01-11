@@ -37,6 +37,6 @@ jobs:
         with:
           token: ${{ secrets.GIST_TOKEN }}
           gist_id: ${{ secrets.GIST_ID }}
-          gist_file_name: clash_config.yaml
-          file_path: ./gen/config/rivoreo_clash_client_config.yaml
+          gist_file_name: rivoreo_clash_client_config.yaml
+          file_path: ./gen/config/clash_config.yaml
           file_type: text
