@@ -1,0 +1,42 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Update Clash Gists - Rivoreo SJC Server
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: [ "rivoreo_accelerator" ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build: 
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+      - name: Clone Personal Override
+        run: |
+          rm -rf proxies
+          GIT_BRANCH="rivoreo_accelerator_sjc"
+          [ -n "${{ secrets.REPO_ACCESS_TOKEN }}" ] && git clone -b $GIT_BRANCH https://x-access-token:${{ secrets.REPO_ACCESS_TOKEN }}@github.com/${{ secrets.RIVOREO_CONFIG_GIT }} overwrite || true
+      - name: Copy Personal Override To Working Directory
+        run: |
+          mkdir -p overwrite
+          cp -R ./overwrite/. ./
+      - name: Generate ClashXPro configuration
+        run: sh ./sh/gen_clash_config.sh ${{ secrets.DLER_SUBSCRIBE_TOKEN }} ${{ secrets.CF_WARP_PRIVATE_KEY }} ${{ secrets.CF_WARP_PUBLIC_KEY }}
+      # Update clash_config.yaml to gist 
+      - name: Deploy
+        uses: exuanbo/actions-deploy-gist@v1
+        with:
+          token: ${{ secrets.GIST_TOKEN }}
+          gist_id: ${{ secrets.RIVOREO_SJC_GIST_ID }}
+          gist_file_name: config.yaml
+          file_path: ./gen/config/clash_config.yaml
+          file_type: text
